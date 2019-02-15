@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Email</th>
+      <th scope="col">CGU</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Acoes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let atleta of atletas">
+      <th scope="row">{{atleta.id}}</th>
+      <td>{{atleta.nome}}</td>
+      <td>{{atleta.cpf}}</td>
+      <td>{{atleta.email}}</td>
+      <td>{{atleta.cgu}}</td>
+      <td>{{atleta.telefone}}</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

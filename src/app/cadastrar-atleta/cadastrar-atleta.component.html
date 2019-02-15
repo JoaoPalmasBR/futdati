@@ -1,0 +1,23 @@
+<form #cadastro="ngForm" (submit)="salvar()">
+  <div class="form-group">
+    <label for="nome">NOME</label>
+    <input type="text" class="form-control" [(ngModel)]="nome" id="nome" name="nome" placeholder="NOME" required autofocus>
+  </div>
+  <div class="form-group">
+    <label for="nome">CPF</label>
+    <input type="text" class="form-control" [(ngModel)]="cpf" id="cpf" name="cpf" placeholder="CPF" required>
+  </div>
+  <div class="form-group">
+    <label for="nome">EMAIL</label>
+    <input type="email" class="form-control" [(ngModel)]="email" id="email" name="email" placeholder="EMAIL" required>
+  </div>
+  <div class="form-group">
+    <label for="nome">CGU</label>
+    <input type="text" class="form-control" [(ngModel)]="cgu" id="cgu" name="cgu" placeholder="CGU" required>
+  </div>
+  <div class="form-group">
+    <label for="nome">TELEFONE</label>
+    <input type="tel" class="form-control" [(ngModel)]="telefone" id="telefone" name="telefone" placeholder="TELEFONE" required>
+  </div>
+  <button type="submit" [disabled]="!cadastro.valid" class="btn btn-primary">Cadastrar</button>
+</form>
